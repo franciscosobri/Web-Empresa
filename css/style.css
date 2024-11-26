@@ -10,3 +10,31 @@ body {
     /* background-color: rgb(185, 255, 255); */
     background-color: black;
 }
+
+
+.nav-icon {
+    height: 80px;
+    width: auto;
+  }
+  
+@media (max-width: 768px) {
+    .nav-icon {
+      height: 30px; /* Tamaño reducido en pantallas pequeñas */
+    }
+  }
+  
+  #carouselExampleCaptions {
+    max-height: 600px; /* Ajusta la altura del contenedor */
+    overflow: hidden;
+  }
+
+  .carousel-inner img {
+    height: 600px; /* Define la altura del carrusel */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+    object-position: center; /* Centra la imagen vertical y horizontalmente */
+  }
+
+  .carousel-caption {
+    bottom: 20px; /* Ajusta la posición del texto */
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
