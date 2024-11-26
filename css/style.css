@@ -1,40 +1,107 @@
-.svgCart {
-    width: 12%;
-}
-
-.svgUser {
-    width: 10%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
-    /* background-color: rgb(185, 255, 255); */
+    font-family: 'Poppins', sans-serif;
     background-color: black;
+    color: white;
 }
-
 
 .nav-icon {
     height: 80px;
     width: auto;
-  }
-  
+}
+
+.svgCart {
+  width: 24px; 
+  height: auto;
+  cursor: pointer;
+}
+
+.svgUser {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
     .nav-icon {
-      height: 30px; /* Tamaño reducido en pantallas pequeñas */
+        height: 30px;
     }
-  }
-  
-  #carouselExampleCaptions {
-    max-height: 600px; /* Ajusta la altura del contenedor */
-    overflow: hidden;
-  }
+}
 
-  .carousel-inner img {
-    height: 600px; /* Define la altura del carrusel */
-    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
-    object-position: center; /* Centra la imagen vertical y horizontalmente */
-  }
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .carousel-caption {
-    bottom: 20px; /* Ajusta la posición del texto */
-    font-size: 1rem; /* Ajusta el tamaño del texto */
-  }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 2rem; /* Espaciado superior adicional */
+  position: relative;
+}
+
+.card-header .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  z-index: 10;
+}
+
+.card-header h3 {
+  margin-top: 1.5rem; /* Añade espacio inferior al badge */
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-footer a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
+
+.card-footer a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffdd57;
+    box-shadow: 0 0 5px 2px rgba(255, 221, 87, 0.5);
+}
+
+footer {
+    background: #1c1c1c;
+    color: #ccc;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
