@@ -105,3 +105,16 @@ footer a {
 footer a:hover {
     color: #ffc107;
 }
+
+.cardn {
+    max-width: 60%; 
+    margin: auto; 
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    color: #1c1c1c;
+  }
+
+.news{
+    text-decoration: underline;
+}
