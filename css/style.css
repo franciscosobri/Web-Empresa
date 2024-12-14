@@ -118,3 +118,14 @@ footer a:hover {
 .news{
     text-decoration: underline;
 }
+/* Estilo para el placeholder */
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Asegura que sea visible */
+  }
+  
+  /* Cuando el campo de entrada está enfocado */
+  input:focus::placeholder {
+    color: gray !important; /* Cambia al color original o deseado */
+  }
+  
