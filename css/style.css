@@ -215,3 +215,12 @@ footer a:hover {
 .itemscenter {
     justify-items: center;
 }
+
+.containerForm {
+    align-self: center;
+}
+
+#formReserva {
+    width: 50%;
+    justify-self: center;
+}
