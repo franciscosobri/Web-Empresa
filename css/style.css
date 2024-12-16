@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-body, html {
+body,
+html {
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -8,24 +9,33 @@ body, html {
 
 body {
     display: flex;
-    flex-direction: column; /* Organiza los elementos en columna */
+    flex-direction: column;
+    /* Organiza los elementos en columna */
     font-family: 'Poppins', sans-serif;
     background-color: black;
     color: white;
 }
 
 .navbar {
-    flex-shrink: 0; /* Header no colapsa */
+    flex-shrink: 0;
+    /* Header no colapsa */
 }
 
 .mainContainer {
-    flex-grow: 1; /* Hace que el contenedor ocupe el espacio restante */
+    flex-grow: 1;
+    /* Hace que el contenedor ocupe el espacio restante */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     text-align: center;
-    margin: 0; /* Elimina márgenes */
+    margin: 0;
+    /* Elimina márgenes */
+}
+
+.containerSoporte {
+    place-content: center;
+    padding-bottom: 10%;
 }
 
 .overflow-hidden {
@@ -39,29 +49,36 @@ body {
 
 .carousel.slide {
     width: 100%;
-    height: 100%; /* Asegura que el carrusel ocupe el 100% del contenedor */
+    height: 100%;
+    /* Asegura que el carrusel ocupe el 100% del contenedor */
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
     justify-content: center;
 }
 
 .carousel-inner {
     width: 100%;
-    height: 100%; /* Ocupa toda la altura */
+    height: 100%;
+    /* Ocupa toda la altura */
     display: flex;
 }
 
 .carousel-item {
-    height: 100%; /* Hace que cada slide ocupe el 100% */
+    height: 100%;
+    /* Hace que cada slide ocupe el 100% */
 }
 
 .carousel-item img {
-    width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
-    height: 100%; /* Asegura que las imágenes se ajusten a la altura */
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    width: 100%;
+    /* Asegura que las imágenes ocupen el ancho completo */
+    height: 100%;
+    /* Asegura que las imágenes se ajusten a la altura */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
 }
 
-.blackBorderInside{
+.blackBorderInside {
     text-shadow: 1px 1px black;
 }
 
@@ -81,15 +98,15 @@ body {
 }
 
 .svgCart {
-  width: 24px; 
-  height: auto;
-  cursor: pointer;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
 }
 
 .svgUser {
-  width: 24px;
-  height: auto;
-  cursor: pointer;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
 }
 
 .headerNavegation {
@@ -119,21 +136,23 @@ body {
 }
 
 .card-header {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-top: 1rem; /* Espaciado superior adicional */
-  position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    /* Espaciado superior adicional */
+    position: relative;
 }
 
 .card-header .badge {
-  font-size: 0.9rem;
-  padding: 0.5rem 0.8rem;
-  z-index: 10;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    z-index: 10;
 }
 
 .more-selled {
-  margin-top: 1.5rem; /* Añade espacio inferior al badge */
-  margin-bottom: 0px;
+    margin-top: 1.5rem;
+    /* Añade espacio inferior al badge */
+    margin-bottom: 0px;
 }
 
 .card-title {
@@ -156,20 +175,23 @@ body {
     transform: scale(1.05);
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
     border-radius: 0.5rem;
     background: #333;
     color: #fff;
     border: 1px solid #444;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     border-color: #ffdd57;
     box-shadow: 0 0 5px 2px rgba(255, 221, 87, 0.5);
 }
 
 footer {
-    flex-shrink: 0; /* Footer no colapsa */
+    flex-shrink: 0;
+    /* Footer no colapsa */
     color: #ccc;
     font-size: 0.9rem;
     text-align: center;
@@ -186,41 +208,49 @@ footer a:hover {
 }
 
 .cardn {
-    max-width: 65%; 
-    margin: auto; 
+    max-width: 65%;
+    margin: auto;
     border: 1px solid gray;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
     color: #1c1c1c;
-  }
+}
 
-.news{
+.news {
     text-decoration: underline;
 }
+
 /* Estilo para el placeholder */
 ::placeholder {
     color: white !important;
-    opacity: 1; /* Asegura que sea visible */
-  }
-  
-  /* Cuando el campo de entrada está enfocado */
-  input:focus::placeholder {
-    color: gray !important; /* Cambia al color original o deseado */
-  }
-  
+    opacity: 1;
+    /* Asegura que sea visible */
+}
+
+/* Cuando el campo de entrada está enfocado */
+input:focus::placeholder {
+    color: gray !important;
+    /* Cambia al color original o deseado */
+}
+
 .max-width-soporte {
     max-width: 1100px;
 }
 
 .itemscenter {
-    justify-items: center;
+    text-align: -webkit-center;
 }
 
 .containerForm {
     align-self: center;
+    text-align: -webkit-center;
 }
 
 #formReserva {
     width: 50%;
     justify-self: center;
+}
+
+.justifyButton {
+    place-self: center;
 }
