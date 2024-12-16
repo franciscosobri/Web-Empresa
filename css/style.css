@@ -35,7 +35,7 @@ body {
 
 .containerSoporte {
     place-content: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .overflow-hidden {
@@ -253,4 +253,9 @@ input:focus::placeholder {
 
 .justifyButton {
     place-self: center;
+}
+
+.bgFormulario {
+    background-color: rgb(255, 255, 255);
+    border-radius: 22px;
 }
